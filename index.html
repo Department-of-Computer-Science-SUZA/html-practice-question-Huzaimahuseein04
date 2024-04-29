@@ -1,12 +1,287 @@
 <!DOCTYPE html>
 <html>
+    <head>
+        <title>Text Tags</title>
+    </head>
+    <body>
+        <h1 style="text-align: center;">To illustrate text formating tags</h1>
+        <hr>
+       <p style="text-align: center;"> 
+        <marquee>This is an alterant Marquee text</marquee></p>
 
-<head>
-    <title>Practice Code</title>
-</head>
+        <p style="text-align: center;">This is <i>italized</i></p>
 
-<body>
-    <h1>Practice Code</h1>
-</body>
+        <p style="text-align: center;">This is <u>underlined</u></p>
 
+        <p style="text-align: center;"> This is <em>emphasized</em></p>
+
+        <p style="text-align: center;"> This is <strong> Strong Text</strong></p>
+        <p style="text-align: center;"> This is <del>striked text</del></p>
+
+<p style="text-align: center;">This is <code>computer code</code></p>
+
+<p style="text-align: center;"> This is <sup>superscript code</sup></p>
+
+<p style="text-align: center;">This is <sub>subsrips code</sub></p>
+
+<p style="text-align: center;">This is <a>big text</a></p>
+
+<p style="text-align: center;">This is  <small>small text</small></p>
+
+    </body>
 </html>
+question2
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Nested and Definiton List</title>
+    </head>
+    <body>
+        <h1 style="text-align: center;">To illustrate Nested and Deifinition List</h1>
+        <hr>
+        <h2>An ordered Nested List:</h2>
+        <ol type="1">
+            <li>Coffee</li>
+            <li>Tea</li>
+            <ol type="a">
+                <li>Black Tea</li>
+                <li>Green Tea
+                    <ol type="i">
+                        <li>China</li>
+                        <li>Africa</li>
+                    </ol>
+                </li>
+            </ol>
+            <li>Milk</li>
+        </ol>
+        <h3>A definition List</h3>
+        <dl>
+            <dt>Bangalore</dt>
+            <dd>-capital city of kamataka</dd>
+            <dt>Mumbai</dt>
+            <dd>-Capital City of Maharashtra</dd>
+        </dl>
+    </body>
+</html>
+question3
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table Example</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: center;
+        }
+        th {
+            background-color: lightgray;
+        }
+    </style>
+</head>
+<body>
+
+<table>
+    <tr>
+        <th colspan="4">Table Heading Cell Spanning 4 Columns</th>
+    </tr>
+    <tr>
+        <td>Normal cell</td>
+        <td colspan="2">Cell spanning 2 columns</td>
+        <td>Normal cell</td>
+    </tr>
+    <tr>
+        <td rowspan="3" style="background-color: lightgray;">Cell spanning 3 rows with a gray background</td>
+        <td>Normal cell</td>
+        <td>Normal cell</td>
+        <td>Normal cell</td>
+    </tr>
+    <tr>
+        <td>Normal cell</td>
+        
+        <td rowspan="2" colspan="2">Cell spanning 2 rows and 2 columns</td>
+    </tr>
+    <tr>
+        <td>Normal cell</td>
+    
+    </tr>
+</table>
+
+</body>
+</html>
+
+questin4
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Academic Information Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+        }
+        form {
+            max-width: 600px;
+            margin: auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color: #f9f9f9;
+        }
+        input[type="text"],
+        input[type="email"],
+        select {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        input[type="radio"],
+        input[type="checkbox"] {
+            margin-right: 5px;
+        }
+        input[type="submit"],
+        input[type="reset"] {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            float: right;
+        }
+        input[type="submit"]:hover,
+        input[type="reset"]:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+
+<form action="#" method="post">
+    <fieldset>
+        <legend><h2>Academic Information</h2></legend>
+        <label for="degree">Degree:</label>&nbsp <input type="text" id="degree" name="degree" value="Master of Business Administration" readonly>
+    <label for="student_id">Student ID:</label>
+   
+        Classes attended
+        <select id="class">
+          <option value="geography">geography</option>
+          <option value="mathematics">mathematics</option>
+          <option value="english">english</option>
+        </select>
+    </fieldset>
+    <fieldset>
+        <legend>Personal Details</legend>
+        <label for="first_name">First Name:</label>
+        <input type="text" id="first_name" name="first_name" placeholder=""><br>
+        <label for="last_name">Last Name:</label>
+        <input type="text" id="last_name" name="last_name" placeholder=""><br>
+        <label for="gender">Gender:</label>
+        <input type="radio" id="male" name="gender" value="Male">
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="Female">
+        <label for="female">Female</label><br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder=""><br>
+    </fieldset>
+    <fieldset>
+        <legend>TERMS AND CONDITIONS........</legend>
+    <br>
+    </fieldset>
+    <input type="submit" value="Send Form">
+    <input type="reset" value="Clear Form">
+</form>
+
+</body>
+</html>
+question5
+<!DOCTYPE html>
+<html lang="en">
+<head> <style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 20px;
+    }
+    form {
+        max-width: 600px;
+        margin: auto;
+        padding: 20px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        background-color: #f9f9f9;
+    }
+    input[type="text"],
+    input[type="email"],
+    select {
+        width: 100%;
+        padding: 10px;
+        margin: 5px 0;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+    }
+    input[type="radio"],
+    input[type="checkbox"] {
+        margin-right: 5px;
+    }
+    input[type="submit"],
+    input[type="reset"] {
+        background-color: #4CAF50;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        float: right;
+    }
+    input[type="submit"]:hover,
+    input[type="reset"]:hover {
+        background-color: #45a049;
+    }
+</style>
+<title>Pizza Order Form</title>
+</head>
+<body>
+    <h2><center>Pizza Shop 2.0</center></h2>
+    <form action="order.php" method="post">
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="topping">Pizza Topping:</label><br>
+        <select id="topping" name="topping">
+            <option value="Supreme">Supreme</option>
+            <option value="Vegetarian">Vegetarian</option>
+            <option value="Hawaiian">Hawaiian</option>
+        </select><br><br>
+
+        <label for="sauce">Pizza Sauce:</label><br>
+        <input type="radio" id="tomato" name="sauce" value="Tomato" checked>
+        <label for="tomato">Tomato</label><br><br>
+
+        <label for="extras">Optional Extras:</label><br>
+        <input type="checkbox" id="cheese" name="extras[]" value="Extra Cheese">
+        <label for="cheese">Extra Cheese</label><br>
+        <input type="checkbox" id="gluten-free" name="extras[]" value="Gluten Free Base">
+        <label for="gluten-free">Gluten Free Base</label><br><br>
+       </table>
+        <label for="delivery">Delivery Instructions:</label><br>
+        <textarea id="delivery" name="delivery" rows="4" cols="50"></textarea><br><br>
+
+        <input type="submit" value="Send my Order">
+    </form>
+</body>
+</html>
+
